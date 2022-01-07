@@ -1,0 +1,81 @@
+.container {
+  max-width: 1280px;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* SIDE PROFILE CSS */
+.sideProfileContainer {
+  width: 300px;
+  margin: 0px 10px;
+}
+.sideProfileItem {
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  max-height: 450px;
+  overflow: auto;
+}
+
+.infoProfile {
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.infoProfile p {
+  font-size: small;
+}
+
+.btnProfile {
+  padding: 3px 0px;
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+.imgProfile {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.imgFriend {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.nameFriend {
+  padding: 10px 10px 0px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* SCROLLBAR CSS */
+.sideProfileItem::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.sideProfileItem::-webkit-scrollbar-track {
+  background: white;
+}
+
+.sideProfileItem::-webkit-scrollbar-track:hover {
+  background: #f1f1f1;
+}
+/* Handle */
+.sideProfileItem::-webkit-scrollbar-thumb {
+  background: #e7e5e5;
+  border-radius: 4px;
+}
+/* Handle on hover */
+.sideProfileItem::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
