@@ -7,10 +7,21 @@
 .circleImg {
   border-radius: 50%;
   object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #3b5998;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* Global Style */
-.flexColumn {
+/* .flexColumn {
   display: flex;
   flex-direction: column;
 }
@@ -18,4 +29,4 @@
 .flexRow {
   display: flex;
   flex-direction: row;
-}
+} */

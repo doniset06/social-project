@@ -1,5 +1,5 @@
 import axios from "axios";
-import { URL_API, APP_ID, LIMIT_POST_PER_PAGE } from "../config";
+import { URL_API, APP_ID } from "../config";
 
 const config = {
   headers: {
@@ -8,13 +8,10 @@ const config = {
   },
 };
 
-export const getAllPost = async () => {
+export const getMyProfile = async (userID) => {
   try {
-    const res = await axios.get(
-      `${URL_API}/post?limit=${LIMIT_POST_PER_PAGE}`,
-      config
-    );
-    const { data } = res.data;
+    const res = await axios.get(`${URL_API}/user/${userID}`, config);
+    const data = res.data;
     return data;
   } catch (error) {
     console.log(error.response.status);

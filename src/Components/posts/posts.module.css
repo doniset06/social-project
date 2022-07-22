@@ -1,8 +1,9 @@
 /* ALL POST CSS */
 .postsSection {
+  display: flex;
   flex-direction: column;
-  margin: 0px 10px;
-  max-width: 800px;
+  flex-basis: 70%;
+  justify-content: center;
 }
 
 /* POST ITEM CSS */
@@ -23,7 +24,7 @@
 }
 
 .postPhoto {
-  max-height: 300px;
+  max-height: 400px;
   max-width: 400px;
   margin: 10px 0px;
 }
@@ -78,7 +79,7 @@ em:hover {
   border-radius: 8px;
 }
 
-.buttonItem p {
+.buttonItem span {
   font-size: 14px;
   margin-left: 5px;
 }
@@ -89,7 +90,10 @@ em:hover {
 
 /* IMAGE PROFILE */
 .imgProfile {
-  width: 55px;
-  height: 55px;
-  margin: 0px 15px 15px 0px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 15px;
+  border: 1px solid #3b5998;
 }

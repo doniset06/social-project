@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../auth/AuthContext";
 import styles from "./Header.module.css";
 import SearchBox from "./SearchBox";
 
 function Navbar() {
+  const authCtx = useContext(AuthContext);
+
   return (
     <header>
       <nav className={styles.nav}>
@@ -10,13 +14,13 @@ function Navbar() {
         <SearchBox />
         <ul className={styles.flexgrow1}>
           <li className={styles.listItem}>
-            <a href="#">Home</a>
+            <Link to={"/home"}>Home</Link>
           </li>
           <li className={styles.listItem}>
-            <a href="#">Friends</a>
+            <Link to={"/home"}>Friends</Link>
           </li>
           <li className={styles.listItem}>
-            <a href="#">Profile</a>
+            <button onClick={authCtx.onLogout}>Logout</button>
           </li>
         </ul>
       </nav>

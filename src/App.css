@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+:root {
+  --main-bg-color: "#efefef";
+  --primary-color: "#3b5998";
+  --red: "#FE2C54";
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,4 +19,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #efefef;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.centered {
+  text-align: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.warning {
+  color: rgb(202, 36, 36);
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
 }

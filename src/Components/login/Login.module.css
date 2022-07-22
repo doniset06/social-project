@@ -1,0 +1,160 @@
+.containerLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.headingTitle {
+  margin-top: 10px;
+  text-align: center;
+  color: #3b5998;
+}
+
+.containerForm,
+.containerUser {
+  background-color: white;
+}
+
+.containerUser {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px 0px;
+}
+
+.containerList {
+  width: 350px;
+  max-height: 250px;
+  margin: 20px auto 0px;
+  padding: 0px;
+  flex-grow: 2;
+  overflow: auto;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  width: 150px;
+  border: 1px solid #3b5998;
+  background-color: #3b5998;
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+button:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background-color: #3f6ed4;
+}
+
+.buttonDelete:hover {
+  background-color: rgb(223, 66, 66);
+}
+
+/* REGISTER FORM */
+.containerForm {
+  max-width: 600px;
+  height: auto;
+  margin: 10px;
+}
+
+.formControls {
+  margin: 15px 10px;
+  padding: 10px;
+}
+
+.formGroup {
+  margin: 10px 5px;
+  flex-basis: 50%;
+}
+.formAction {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 10px 5px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.formGroup input {
+  width: 100%;
+  font-size: 0.9em;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.formGroup input:focus {
+  background-color: #d7e1f5;
+}
+
+.formRadioButton {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5px;
+}
+
+.formRadioButton input {
+  margin: 5px 3px;
+}
+
+/* USER LIST PER ITEM */
+.containerUserList {
+  align-items: center;
+  padding: 5px;
+}
+
+.containerUserList:hover {
+  background-color: #ebebeb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* SCROLLBAR CSS */
+.containerList::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.containerList::-webkit-scrollbar-track {
+  background: white;
+}
+
+.containerList::-webkit-scrollbar-track:hover {
+  background: #f1f1f1;
+}
+/* Handle */
+.containerList::-webkit-scrollbar-thumb {
+  background: #e7e5e5;
+  border-radius: 4px;
+}
+/* Handle on hover */
+.containerList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Hide Arrow Spin input Number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,123 @@
+.HomeContainer {
+  width: 1080px;
+  min-width: 980px;
+  margin-top: 50px;
+}
+
+/* Home Side Profile */
+/* SIDE PROFILE CSS */
+.sideProfileContainer {
+  flex-basis: 30%;
+  margin: 0px 10px;
+}
+.sideProfileItem {
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  max-height: 450px;
+}
+
+/* ProfilMini CSS */
+.infoProfile {
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.infoProfile p {
+  font-size: small;
+}
+
+.btnProfile {
+  padding: 3px 0px;
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Friend List */
+.containerList {
+  height: 350px;
+  overflow: auto;
+}
+.containerItemList {
+  align-items: center;
+  padding: 5px;
+}
+
+.containerItemList:hover {
+  background-color: #ebebeb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.imgFriend {
+  width: 50px;
+  height: 50px;
+  margin: 5px 0px;
+  border: 1px solid #3b5998;
+}
+
+.nameFriend {
+  margin: 0px 20px 0px 12px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* BUTTON LIST */
+.buttonContainer {
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.flexStart {
+  justify-content: flex-start;
+}
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.buttonContainer p {
+  flex-basis: 33.3%;
+  text-align: center;
+}
+
+.button {
+  width: 50px;
+  height: auto;
+  flex-basis: 33.3%;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+/* SCROLLBAR CSS */
+.containerList::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.containerList::-webkit-scrollbar-track {
+  background: white;
+}
+
+.containerList::-webkit-scrollbar-track:hover {
+  background: #f1f1f1;
+}
+/* Handle */
+.containerList::-webkit-scrollbar-thumb {
+  background: #e7e5e5;
+  border-radius: 4px;
+}
+/* Handle on hover */
+.containerList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

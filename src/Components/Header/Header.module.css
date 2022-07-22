@@ -15,19 +15,35 @@
 }
 
 ul {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .listItem {
+  padding: 8px;
   display: inline;
   list-style-type: none;
-  margin-right: 10px;
-  padding: 10px;
+  margin-left: 1.5rem;
 }
 
-.listItem:hover {
+.listItem:not(:last-child):hover {
   background-color: #efefef;
   border-radius: 8px;
+}
+
+.listItem button {
+  width: 100px;
+  border: none;
+  background-color: #3b5998;
+  color: white;
+  font-size: 1em;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.listItem button:hover {
+  background-color: #3f6ed4;
 }
 
 a {
@@ -38,22 +54,24 @@ a {
 
 /* SEARCH COMPONENT */
 .searchContainer {
-  max-width: 400px;
+  max-width: 450px;
   margin-right: 5px;
 }
 
 .searchBtn {
-  padding: 11.5px 10px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   width: 10%;
+  height: 48px;
   background-color: #3b5998;
   border: 1px solid #3b5998;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .searchInput {
-  padding: 13px 10px;
+  padding: 15px 10px;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   border: 1px solid #3b5998;

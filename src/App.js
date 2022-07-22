@@ -1,24 +1,24 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import { Fragment } from "react";
-import Navbar from "./Components/Header/Navbar";
-import MainContent from "./Components/MainContent/MainContent";
+import LoginPage from "./pages/LoginPage";
+
+// Initialization Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import { getAllPost } from "./action/action-post.js";
-
+import Routes from "./routing/Routes";
 library.add(fab, far, fas);
 
 function App() {
-  useEffect(() => {
-    getAllPost();
-  }, []);
   return (
     <Fragment>
-      <Navbar />
-      <MainContent />
+      <Switch>
+        <Route exact path={"/login"} component={LoginPage} />
+        <Route component={Routes} />
+      </Switch>
     </Fragment>
   );
 }
